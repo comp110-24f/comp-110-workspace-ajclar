@@ -20,12 +20,12 @@ def main_planner(guests: int) -> None:
 
 def tea_bags(people: int) -> int:
     """Calculate the needed # of tea bags."""
-    return people * 2
+    return people * 2  # 2 bags / person
 
 
 def treats(people: int) -> int:
     """Calculate the needed # of treats."""
-    return int(tea_bags(people=people) * 1.5)
+    return int(tea_bags(people=people) * 1.5)  # 1.5 treats / tea bag
 
 
 def cost(tea_count: int, treat_count: int) -> float:
