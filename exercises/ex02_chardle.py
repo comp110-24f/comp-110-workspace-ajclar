@@ -6,7 +6,7 @@ __author__ = "730807192"
 def input_word() -> str:
     chosen_word: str = input("Enter a 5-character word: ")
     if len(chosen_word) != 5:
-        print("Error: Word must contain 5 characters")
+        print("Error: Word must contain 5 characters.")
         exit()  # Exit when there's an error, before returning /any/ value
     return chosen_word
 
