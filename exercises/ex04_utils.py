@@ -6,6 +6,9 @@ __author__ = "730807192"
 def all(toCheck: list[int], num: int) -> bool:
     """Checks if every value in the list is equal to num."""
     index: int = 0
+    if len(toCheck) == 0:
+        # Return false if list is empty
+        return False
     while index < len(toCheck):
         if not (toCheck[index] == num):
             # Cut the loop short if *any* value isn't the same.
